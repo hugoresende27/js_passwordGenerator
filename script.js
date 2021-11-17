@@ -17,7 +17,7 @@ const randomFuncion = { //OBJETO randomFunction que vai ter chaves lower, upper,
 }
 
 generateEL.addEventListener('click', () => {
-    const comprimento = compEL.value
+    const comprimento = +compEL.value
     console.log(comprimento)//CONSOLE LOG DO COMPRIMENTO DA PASS
 })
 
