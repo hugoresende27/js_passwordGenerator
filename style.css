@@ -137,8 +137,8 @@ footer{
     text-align: center;
     /* border: 1px solid var(--charcoal-cor); */
     position: absolute;
-    bottom: 0rem;
-    left: 50%;
+     bottom: 0rem; 
+     left: 50%; 
     transform: translate(-50%, -50%);
     font-weight: 500;
     padding: 0rem 0.9rem;

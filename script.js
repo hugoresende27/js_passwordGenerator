@@ -1,11 +1,26 @@
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
+const resultadoEL = document.getElementById('result')
+const compEL = document.getElementById('comp')
+const upperEL = document.getElementById('upper')
+const lowerEL = document.getElementById('lower')
+const numsEL = document.getElementById('nums')
+const simbEL = document.getElementById('simb')
+const generateEL = document.getElementById('generate')
+const boardEL = document.getElementById('board')
+
 const randomFuncion = { //OBJETO randomFunction que vai ter chaves lower, upper, number e symbol, cada chave tem o valor da função respectiva
     lower: getRandomMinusc,
     upper: getRandomMaiusc,
     number: getRandomNum,
     symbol: getRandomSimb
 }
+
+generateEL.addEventListener('click', () => {
+    const comprimento = compEL.value
+    console.log(comprimento)//CONSOLE LOG DO COMPRIMENTO DA PASS
+})
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////
