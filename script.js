@@ -16,6 +16,23 @@ const randomFuncion = { //OBJETO randomFunction que vai ter chaves lower, upper,
     symbol: getRandomSimb
 }
 
+boardEL.addEventListener('click', () => {
+    const txtArea = document.createElement('textarea')
+    const password = resultadoEL.innerText
+
+    if (!password)
+    {
+        return
+    }
+
+    txtArea.value = password
+    document.body.appendChild(txtArea)
+    txtArea.select()
+    document.execCommand('copy')
+    txtArea.remove()
+    alert('Password copiada para Ctrl C')
+})
+
 generateEL.addEventListener('click', () => {
     const comprimento = +compEL.value // + para converter para tipo number
     //console.log(comprimento)//CONSOLE LOG DO COMPRIMENTO DA PASS
